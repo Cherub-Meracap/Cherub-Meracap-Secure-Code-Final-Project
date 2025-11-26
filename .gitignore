@@ -1,0 +1,42 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Visual Studio Code
+.vscode/
+
+# Directories
+  - build
+  - dist
+  - logs
+  - source
+
+# Installer
+  - *.whl
+  - *.tar.gz
+
+# Opened Temporary xlsx files
+tests/~$A02_pixell_test_plan_chequing_account.xlsx
+tests/~$A02_pixell_test_plan_investment_account.xlsx
+tests/~$A02_pixell_test_plan_savings_account.xlsx
+
+# Observer email
+output/observer_emails.txt
+
+# Logs
+logs/manage_data.log
+
+# Data
+data/accounts.csv
+
+#build
+pixell_river
+pixell_river.spec
+
+# Run bandit scan
+$ bandit -r C:\\Users\\jamel\\Documents\\rrc-polytech\\semester-3\\secure-code\\assignment\\Cherub-Meracap-Secure-Code-Final-Project
