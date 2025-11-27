@@ -42,3 +42,8 @@ Account number, balance, Date created and Account Type.
 Data was filtered by iterating over all the rows and using an if
 statement to check if that row has the value of what the user is 
 searching.
+
+## Vulnerability Scan
+This project is used for the final secure code testing project.
+Code scanning tools both from the ide and github actions are used to scan for vulnerabilities
+A complete vulnerability report is then created after scanning.
