@@ -13,12 +13,12 @@ from bank_account import *
 from datetime import date
 from client.client import Client
 from unittest.mock import patch
-import pickle
-import os
+import pickle   
+import os  
 
 
-DB_Password = "My_pw123"
-API_KEY = "sk-fake-api-Key"
+DB_Password = "My_pw123"   
+API_KEY = "sk-fake-api-Key"  
 # 2. Create a Client object with data of your choice.
 client1 = Client(1001, "Paul", "Morphy", "paulmorphy@pixell-river.com")
 
@@ -55,7 +55,7 @@ client2 = Client(1936, "Mikhail", "Tal", "mikhailtal@pixell-river.com")
 savings2 = SavingsAccount(1992, 1936, 2000.10, date(2024, 2, 25), 200.00)
 savings2.attach(client2)
 
-def load_account_data(filename):
+def load_account_data(filename):    
     try:
         with open(filename, 'rb') as file:
             data = pickle.load(file)
@@ -105,7 +105,7 @@ except Exception as e:
     print("Error occured:", e)
 
 print(chequing_account)
-os.system(f'echo {chequing_account} | mail -s "{chequing_account}" {chequing_account.client_number}')
+os.system(f'echo {chequing_account} | mail -s "{chequing_account}" {chequing_account.client_number}')   
 
 # Performing deposits and withdraws with savings
 ## performing deposit notifies observer of large transaction
@@ -168,3 +168,5 @@ except Exception as e:
     print("Error occured:", e)
 
 print(savings2)
+
+

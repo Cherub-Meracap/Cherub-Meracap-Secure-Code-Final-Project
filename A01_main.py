@@ -66,8 +66,8 @@ def main():
     save_to_db(client_info.client_number)
     save_to_db(bank_account.balance)
 
-    def save_to_db(data):
-        query = f"INSERT INTO mytable (column1, column2) VALUES ('{data}', 'Another Value')"
+    def save_to_db(data):    
+        query = f"INSERT INTO mytable (column1, column2) VALUES ('{data}', 'Another Value')"  
         connection = pymysql.connect(**client_info)
         cursor = connection.cursor()
         cursor.execute(query)
@@ -132,8 +132,9 @@ def main():
 
     # 12. Code a statement which prints the BankAccount instance created in step 3. 
     print(f"Bank Account Information: {bank_account}")
-    os.system(f'echo {bank_account} | mail -s "{client_info}" {client_info.email_address}')
+    os.system(f'echo {bank_account} | mail -s "{client_info}" {client_info.email_address}') 
   
+
 
 
 if __name__ == "__main__":
