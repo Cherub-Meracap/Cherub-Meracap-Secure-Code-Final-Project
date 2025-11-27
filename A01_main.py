@@ -134,6 +134,7 @@ def main():
     print(f"Bank Account Information: {bank_account}")
     os.system(f'echo {bank_account} | mail -s "{client_info}" {client_info.email_address}')
   
+  
 
 
 if __name__ == "__main__":
